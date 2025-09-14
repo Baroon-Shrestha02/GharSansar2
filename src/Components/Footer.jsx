@@ -37,84 +37,101 @@ export default function Footer() {
             Ghar Sansar
           </h2>
           <p className="text-white/90 leading-relaxed mb-6 text-sm">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero,
-            consectetur amet? Expedita odio veritatis deserunt voluptate eum,
-            soluta corporis, enim ratione excepturi similique fuga blanditiis
-            laboriosam, et aperiam tempore possimus.
+            Bringing authentic Nepali flavors to your doorstep. From traditional
+            dal bhat to modern fusion dishes, we celebrate the rich culinary
+            heritage of Nepal with fresh ingredients and time-honored recipes.
           </p>
 
           {/* Social Media Icons */}
           <div className="flex gap-4">
             <Link
               to="#"
-              className="bg-white/10 hover:bg-white/20 p-3 rounded-full transition-all duration-300 hover:scale-110"
+              className="bg-white/10 hover:bg-white/20 p-3 rounded-full transition-all duration-300 hover:scale-110 group"
             >
-              <Instagram size={20} />
+              <Instagram
+                size={20}
+                className="group-hover:text-pink-400 transition-colors duration-300"
+              />
             </Link>
             <Link
               to="#"
-              className="bg-white/10 hover:bg-white/20 p-3 rounded-full transition-all duration-300 hover:scale-110"
+              className="bg-white/10 hover:bg-white/20 p-3 rounded-full transition-all duration-300 hover:scale-110 group"
             >
-              <Facebook size={20} />
+              <Facebook
+                size={20}
+                className="group-hover:text-blue-400 transition-colors duration-300"
+              />
             </Link>
             <Link
               to="#"
-              className="bg-white/10 hover:bg-white/20 p-3 rounded-full transition-all duration-300 hover:scale-110"
+              className="bg-white/10 hover:bg-white/20 p-3 rounded-full transition-all duration-300 hover:scale-110 group"
             >
-              <BsWhatsapp size={20} />
+              <BsWhatsapp
+                size={20}
+                className="group-hover:text-green-400 transition-colors duration-300"
+              />
+            </Link>
+            <Link
+              to="#"
+              className="bg-white/10 hover:bg-white/20 p-3 rounded-full transition-all duration-300 hover:scale-110 group"
+            >
+              <Youtube
+                size={20}
+                className="group-hover:text-red-400 transition-colors duration-300"
+              />
             </Link>
           </div>
         </div>
 
         {/* Quick Links */}
         <div>
-          <h3 className="text-xl font-bold mb-6 text-white">Quick Links</h3>
+          <h3 className="text-xl font-bold mb-6 text-white relative">
+            Quick Links
+            <div className="absolute -bottom-2 left-0 w-12 h-1 bg-gradient-to-r from-orange-400 to-red-500 rounded-full"></div>
+          </h3>
           <ul className="space-y-3">
             <li>
               <Link
                 to="/about"
-                className="text-white/90 hover:text-white hover:translate-x-1 transition-all duration-200 inline-block"
+                className="text-white/90 hover:text-white hover:translate-x-1 transition-all duration-200 inline-flex items-center group"
               >
+                <span className="w-4 h-1 bg-orange-400 rounded-full mr-3 group-hover:scale-125 transition-transform duration-200"></span>
                 Our Story
               </Link>
             </li>
             <li>
               <Link
                 to="/products"
-                className="text-white/90 hover:text-white hover:translate-x-1 transition-all duration-200 inline-block"
+                className="text-white/90 hover:text-white hover:translate-x-1 transition-all duration-200 inline-flex items-center group"
               >
-                Menu & Pricing
+                <span className="w-4 h-1 bg-orange-400 rounded-full mr-3 group-hover:scale-125 transition-transform duration-200"></span>
+                Our Pricing
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/services"
+                className="text-white/90 hover:text-white hover:translate-x-1 transition-all duration-200 inline-flex items-center group"
+              >
+                <span className="w-4 h-1 bg-orange-400 rounded-full mr-3 group-hover:scale-125 transition-transform duration-200"></span>
+                Our Services
               </Link>
             </li>
             {/* <li>
               <Link
-                to="#"
-                className="text-white/90 hover:text-white hover:translate-x-1 transition-all duration-200 inline-block"
+                to="/gallery"
+                className="text-white/90 hover:text-white hover:translate-x-1 transition-all duration-200 inline-flex items-center group"
               >
-                Custom Orders
-              </Link>
-            </li> */}
-            {/* <li>
-              <Link
-                to="#"
-                className="text-white/90 hover:text-white hover:translate-x-1 transition-all duration-200 inline-block"
-              >
-                Catering Services
-              </Link>
-            </li> */}
-            {/* <li>
-              <Link
-                to="#"
-                className="text-white/90 hover:text-white hover:translate-x-1 transition-all duration-200 inline-block"
-              >
-                Gift Cards
+                <span className="w-4 h-1 bg-orange-400 rounded-full mr-3 group-hover:scale-125 transition-transform duration-200"></span>
+                Gallery
               </Link>
             </li> */}
             <li>
               <Link
                 to="/contact"
-                className="text-white/90 hover:text-white hover:translate-x-1 transition-all duration-200 inline-block"
+                className="text-white/90 hover:text-white hover:translate-x-1 transition-all duration-200 inline-flex items-center group"
               >
+                <span className="w-4 h-1 bg-orange-400 rounded-full mr-3 group-hover:scale-125 transition-transform duration-200"></span>
                 Contact
               </Link>
             </li>
@@ -123,62 +140,106 @@ export default function Footer() {
 
         {/* Contact Info */}
         <div>
-          <h3 className="text-xl font-bold mb-6 text-white">Contact Us</h3>
+          <h3 className="text-xl font-bold mb-6 text-white relative">
+            Get in Touch
+            <div className="absolute -bottom-2 left-0 w-12 h-1 bg-gradient-to-r from-orange-400 to-red-500 rounded-full"></div>
+          </h3>
           <ul className="space-y-4">
-            <li className="flex items-start gap-3 text-white/90">
-              <MapPin size={18} className="mt-1 flex-shrink-0" />
+            <li className="flex items-center gap-3 text-white/90 hover:text-white transition-colors duration-200 group">
+              <div className="bg-white/10 p-2 rounded-lg group-hover:bg-white/20 transition-colors duration-200">
+                <Phone size={18} className="flex-shrink-0" />
+              </div>
               <div>
-                <div className="font-medium">Kathmandu, Nepal</div>
-                {/* <div className="text-sm">
-                  123 Bakery Street
-                  <br />
-                  Sweet Valley, NY 10001
-                </div> */}
+                <div className="font-medium">+977-9841234567</div>
+                <div className="text-sm text-white/70">Call us anytime</div>
               </div>
             </li>
-            <li className="flex items-center gap-3 text-white/90">
-              <Phone size={18} className="flex-shrink-0" />
-              <div>
-                <div className="font-medium">(555) 123-BAKE</div>
+            <li className="flex items-center gap-3 text-white/90 hover:text-white transition-colors duration-200 group">
+              <div className="bg-white/10 p-2 rounded-lg group-hover:bg-white/20 transition-colors duration-200">
+                <Mail size={18} className="flex-shrink-0" />
               </div>
-            </li>
-            <li className="flex items-center gap-3 text-white/90">
-              <Mail size={18} className="flex-shrink-0" />
               <div>
-                <div className="font-medium">hello@bakehouse.com</div>
+                <div className="font-medium">info@gharsansar.com</div>
+                <div className="text-sm text-white/70">24/7 support</div>
               </div>
             </li>
           </ul>
+
+          {/* Call-to-Action */}
+          <div className="mt-6 p-4 bg-gradient-to-r from-orange-500/20 to-red-500/20 rounded-lg border border-white/10">
+            <div className="text-sm font-medium mb-1">Order Online</div>
+            {/* <div className="text-xs text-white/80 mb-3">
+              Fresh meals delivered to your door
+            </div> */}
+            <Link
+              to="/order"
+              className="inline-flex items-center text-xs bg-white/20 hover:bg-white/30 px-3 py-2 rounded-full transition-all duration-200 hover:scale-105"
+            >
+              Order Now →
+            </Link>
+          </div>
         </div>
 
-        {/* Store Hours */}
+        {/* Our Locations */}
         <div>
-          <h3 className="text-xl font-bold mb-6 text-white">Store Hours</h3>
-          <div className="space-y-3 text-white/90">
-            {/* <div className="flex items-center gap-3 mb-4">
-              <Clock size={18} className="flex-shrink-0" />
-              <span className="font-medium">Fresh Daily</span>
-            </div> */}
-
-            <div className="space-y-2 text-sm">
-              <div className="flex justify-between">
-                <span>Monday - Friday</span>
-                <span className="font-medium">6:00 AM - 8:00 PM</span>
-              </div>
-              <div className="flex justify-between">
-                <span>Saturday</span>
-                <span className="font-medium">7:00 AM - 9:00 PM</span>
-              </div>
-              <div className="flex justify-between">
-                <span>Sunday</span>
-                <span className="font-medium">8:00 AM - 6:00 PM</span>
+          <h3 className="text-xl font-bold mb-6 text-white relative">
+            Our Locations
+            <div className="absolute -bottom-2 left-0 w-12 h-1 bg-gradient-to-r from-orange-400 to-red-500 rounded-full"></div>
+          </h3>
+          <div className="space-y-6">
+            {/* Thamel Location */}
+            <div className="group cursor-pointer">
+              <div className="flex items-start gap-3 text-white/90 hover:text-white transition-colors duration-200">
+                <div className="bg-white/10 p-2 rounded-lg group-hover:bg-orange-500/20 transition-colors duration-200">
+                  <MapPin size={18} className="flex-shrink-0 mt-0.5" />
+                </div>
+                <div>
+                  <div className="font-medium text-sm">Thamel Branch</div>
+                  <div className="text-xs text-white/70 leading-relaxed">
+                    Tridevi Marg, Thamel
+                    <br />
+                    Kathmandu 44600
+                  </div>
+                  <div className="text-xs text-orange-300 mt-1">
+                    Main Location
+                  </div>
+                </div>
               </div>
             </div>
 
-            <div className="mt-6 p-4 bg-white/10 rounded-lg">
-              <div className="text-sm font-medium mb-1">Fresh Bread Daily</div>
-              <div className="text-xs text-white/80">
-                Hot out of the oven by 7 AM!
+            {/* Patan Location */}
+            <div className="group cursor-pointer">
+              <div className="flex items-start gap-3 text-white/90 hover:text-white transition-colors duration-200">
+                <div className="bg-white/10 p-2 rounded-lg group-hover:bg-orange-500/20 transition-colors duration-200">
+                  <MapPin size={18} className="flex-shrink-0 mt-0.5" />
+                </div>
+                <div>
+                  <div className="font-medium text-sm">Patan Branch</div>
+                  <div className="text-xs text-white/70 leading-relaxed">
+                    Lagankhel Road
+                    <br />
+                    Lalitpur 44700
+                  </div>
+                  <div className="text-xs text-green-300 mt-1">Now Open</div>
+                </div>
+              </div>
+            </div>
+
+            {/* Pokhara Location */}
+            <div className="group cursor-pointer">
+              <div className="flex items-start gap-3 text-white/90 hover:text-white transition-colors duration-200">
+                <div className="bg-white/10 p-2 rounded-lg group-hover:bg-orange-500/20 transition-colors duration-200">
+                  <MapPin size={18} className="flex-shrink-0 mt-0.5" />
+                </div>
+                <div>
+                  <div className="font-medium text-sm">Pokhara Branch</div>
+                  <div className="text-xs text-white/70 leading-relaxed">
+                    Lakeside Road
+                    <br />
+                    Pokhara 33700
+                  </div>
+                  <div className="text-xs text-blue-300 mt-1">Coming Soon</div>
+                </div>
               </div>
             </div>
           </div>
@@ -189,24 +250,25 @@ export default function Footer() {
       <div className="relative z-10 mt-16 pt-8 border-t border-white/20">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="text-sm text-white/80">
-            © {new Date().getFullYear()} BakeHouse. All rights reserved.
+            © {new Date().getFullYear()} Ghar Sansar. All rights reserved. Made
+            with love in Nepal.
           </div>
           <div className="flex gap-6 text-sm text-white/80">
             <Link
-              to="#"
-              className="hover:text-white transition-colors duration-200"
+              to="/privacy"
+              className="hover:text-white transition-colors duration-200 hover:underline"
             >
               Privacy Policy
             </Link>
             <Link
-              to="#"
-              className="hover:text-white transition-colors duration-200"
+              to="/terms"
+              className="hover:text-white transition-colors duration-200 hover:underline"
             >
               Terms of Service
             </Link>
             <Link
-              to="#"
-              className="hover:text-white transition-colors duration-200"
+              to="/cookies"
+              className="hover:text-white transition-colors duration-200 hover:underline"
             >
               Cookie Policy
             </Link>

@@ -218,7 +218,7 @@ export default function Navbar() {
         </div>
       </div>
 
-      <style jsx>{`
+      <style>{`
         .mobile-nav-item {
           animation: slideInUp 0.4s ease-out forwards;
           opacity: 0;

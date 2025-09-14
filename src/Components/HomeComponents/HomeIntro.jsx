@@ -43,7 +43,7 @@ export default function HomeIntro() {
                   <div className="w-24 h-1 bg-primary rounded-full"></div>
 
                   {/* Main Text */}
-                  <h2 className="text-5xl sm:text-6xl lg:text-7xl font-black leading-[0.9] text-gray-900 tracking-tight">
+                  <h2 className="text-5xl lg:text-7xl font-black leading-[0.9] text-gray-900 tracking-tight">
                     <span className="block">MATERIALS THAT</span>
                     <span className="block text-secondary">BUILD DREAMS</span>
                     <span className="block">AND CREATE</span>

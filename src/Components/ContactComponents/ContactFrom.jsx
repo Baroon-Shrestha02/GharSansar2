@@ -23,7 +23,7 @@ export default function ContactForm() {
   };
 
   return (
-    <section className="bg-gray-50 py-16 px-6 md:px-20">
+    <section className="bg-gradient-to-b from-gray-200 to-white py-16 mx-12 px-8 rounded-t-3xl relative -mt-30 z-20">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
@@ -41,18 +41,18 @@ export default function ContactForm() {
           <div className="space-y-8">
             {/* Contact Information Cards */}
             <div className="bg-white rounded-3xl shadow-xl p-8 space-y-8">
-              <h3 className="text-2xl font-serif font-bold text-[#009F8A] mb-6">
+              <h3 className="text-2xl font-serif font-bold text-secondary mb-6">
                 Contact Information
               </h3>
 
               {/* Location */}
-              <div className="flex items-start gap-4 p-4 bg-[#009F8A]/5 rounded-2xl border-l-4 border-[#009F8A]">
+              <div className="flex items-start gap-4 p-4 bg-[#009F8A]/5 rounded-2xl border-l-4 border-secondary">
                 <MapPin
-                  className="text-[#009F8A] mt-1 flex-shrink-0"
+                  className="text-secondary mt-1 flex-shrink-0"
                   size={24}
                 />
                 <div>
-                  <h4 className="font-semibold text-[#009F8A] text-lg">
+                  <h4 className="font-semibold text-secondary text-lg">
                     Our Location
                   </h4>
                   <p className="text-gray-600 mt-1">
@@ -66,13 +66,13 @@ export default function ContactForm() {
               </div>
 
               {/* Phone */}
-              <div className="flex items-start gap-4 p-4 bg-[#009F8A]/5 rounded-2xl border-l-4 border-[#009F8A]">
+              <div className="flex items-start gap-4 p-4 bg-[#009F8A]/5 rounded-2xl border-l-4 border-secondary">
                 <Phone
-                  className="text-[#009F8A] mt-1 flex-shrink-0"
+                  className="text-secondary mt-1 flex-shrink-0"
                   size={24}
                 />
                 <div>
-                  <h4 className="font-semibold text-[#009F8A] text-lg">
+                  <h4 className="font-semibold text-secondary text-lg">
                     Phone
                   </h4>
                   <p className="text-gray-600 mt-1">
@@ -84,10 +84,10 @@ export default function ContactForm() {
               </div>
 
               {/* Email */}
-              <div className="flex items-start gap-4 p-4 bg-[#009F8A]/5 rounded-2xl border-l-4 border-[#009F8A]">
-                <Mail className="text-[#009F8A] mt-1 flex-shrink-0" size={24} />
+              <div className="flex items-start gap-4 p-4 bg-[#009F8A]/5 rounded-2xl border-l-4 border-secondary">
+                <Mail className="text-secondary mt-1 flex-shrink-0" size={24} />
                 <div>
-                  <h4 className="font-semibold text-[#009F8A] text-lg">
+                  <h4 className="font-semibold text-secondary text-lg">
                     Email
                   </h4>
                   <p className="text-gray-600 mt-1">
@@ -99,13 +99,13 @@ export default function ContactForm() {
               </div>
 
               {/* Opening Hours */}
-              <div className="flex items-start gap-4 p-4 bg-[#009F8A]/5 rounded-2xl border-l-4 border-[#009F8A]">
+              <div className="flex items-start gap-4 p-4 bg-[#009F8A]/5 rounded-2xl border-l-4 border-secondary">
                 <Clock
-                  className="text-[#009F8A] mt-1 flex-shrink-0"
+                  className="text-secondary mt-1 flex-shrink-0"
                   size={24}
                 />
                 <div>
-                  <h4 className="font-semibold text-[#009F8A] text-lg">
+                  <h4 className="font-semibold text-secondary text-lg">
                     Opening Hours
                   </h4>
                   <div className="text-gray-600 mt-1 space-y-1">
@@ -121,7 +121,7 @@ export default function ContactForm() {
                       <span className="font-medium">Sunday:</span> 8:00 AM -
                       8:00 PM
                     </p>
-                    <p className="text-[#009F8A] font-medium mt-2">
+                    <p className="text-secondary font-medium mt-2">
                       Fresh bread available from 7:30 AM daily!
                     </p>
                   </div>
@@ -134,7 +134,7 @@ export default function ContactForm() {
 
           {/* Right Column - Contact Form */}
           <div className="bg-white rounded-3xl shadow-xl p-8">
-            <h3 className="text-2xl font-serif font-bold text-[#009F8A] mb-6">
+            <h3 className="text-2xl font-serif font-bold text-secondary mb-6">
               Send Us a Message
             </h3>
             <p className="text-gray-600 mb-8">
@@ -144,12 +144,12 @@ export default function ContactForm() {
             <div className="space-y-6">
               {/* Name */}
               <div className="group">
-                <label className="block text-sm font-medium text-[#009F8A] mb-2 group-focus-within:text-[#007A6B]">
+                <label className="block text-sm font-medium text-secondary mb-2 group-focus-within:text-[#007A6B]">
                   Full Name *
                 </label>
-                <div className="flex items-center gap-3 border-2 border-gray-200 rounded-xl p-4 focus-within:border-[#009F8A] focus-within:ring-2 focus-within:ring-[#009F8A]/20 transition-all">
+                <div className="flex items-center gap-3 border-2 border-gray-200 rounded-xl p-4 focus-within:border-secondary focus-within:ring-2 focus-within:ring-[#009F8A]/20 transition-all">
                   <User
-                    className="text-gray-400 group-focus-within:text-[#009F8A] transition-colors"
+                    className="text-gray-400 group-focus-within:text-secondary transition-colors"
                     size={20}
                   />
                   <input
@@ -166,12 +166,12 @@ export default function ContactForm() {
 
               {/* Email */}
               <div className="group">
-                <label className="block text-sm font-medium text-[#009F8A] mb-2 group-focus-within:text-[#007A6B]">
+                <label className="block text-sm font-medium text-secondary mb-2 group-focus-within:text-[#007A6B]">
                   Email Address *
                 </label>
-                <div className="flex items-center gap-3 border-2 border-gray-200 rounded-xl p-4 focus-within:border-[#009F8A] focus-within:ring-2 focus-within:ring-[#009F8A]/20 transition-all">
+                <div className="flex items-center gap-3 border-2 border-gray-200 rounded-xl p-4 focus-within:border-secondary focus-within:ring-2 focus-within:ring-[#009F8A]/20 transition-all">
                   <Mail
-                    className="text-gray-400 group-focus-within:text-[#009F8A] transition-colors"
+                    className="text-gray-400 group-focus-within:text-secondary transition-colors"
                     size={20}
                   />
                   <input
@@ -188,12 +188,12 @@ export default function ContactForm() {
 
               {/* Phone */}
               <div className="group">
-                <label className="block text-sm font-medium text-[#009F8A] mb-2 group-focus-within:text-[#007A6B]">
+                <label className="block text-sm font-medium text-secondary mb-2 group-focus-within:text-[#007A6B]">
                   Phone Number *
                 </label>
-                <div className="flex items-center gap-3 border-2 border-gray-200 rounded-xl p-4 focus-within:border-[#009F8A] focus-within:ring-2 focus-within:ring-[#009F8A]/20 transition-all">
+                <div className="flex items-center gap-3 border-2 border-gray-200 rounded-xl p-4 focus-within:border-secondary focus-within:ring-2 focus-within:ring-[#009F8A]/20 transition-all">
                   <Phone
-                    className="text-gray-400 group-focus-within:text-[#009F8A] transition-colors"
+                    className="text-gray-400 group-focus-within:text-secondary transition-colors"
                     size={20}
                   />
                   <input
@@ -210,12 +210,12 @@ export default function ContactForm() {
 
               {/* Message */}
               <div className="group">
-                <label className="block text-sm font-medium text-[#009F8A] mb-2 group-focus-within:text-[#007A6B]">
+                <label className="block text-sm font-medium text-secondary mb-2 group-focus-within:text-[#007A6B]">
                   Your Message *
                 </label>
-                <div className="flex items-start gap-3 border-2 border-gray-200 rounded-xl p-4 focus-within:border-[#009F8A] focus-within:ring-2 focus-within:ring-[#009F8A]/20 transition-all">
+                <div className="flex items-start gap-3 border-2 border-gray-200 rounded-xl p-4 focus-within:border-secondary focus-within:ring-2 focus-within:ring-[#009F8A]/20 transition-all">
                   <MessageCircle
-                    className="text-gray-400 group-focus-within:text-[#009F8A] transition-colors mt-1 flex-shrink-0"
+                    className="text-gray-400 group-focus-within:text-secondary transition-colors mt-1 flex-shrink-0"
                     size={20}
                   />
                   <textarea
@@ -235,7 +235,7 @@ export default function ContactForm() {
                 <button
                   type="button"
                   onClick={handleSubmit}
-                  className="w-full bg-[#009F8A] hover:bg-[#007A6B] active:bg-[#006B5A] transition-all duration-200 text-white px-8 py-4 rounded-xl font-medium text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+                  className="w-full bg-secondary hover:bg-[#007A6B] active:bg-[#006B5A] transition-all duration-200 text-white px-8 py-4 rounded-xl font-medium text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
                 >
                   Send Message
                 </button>

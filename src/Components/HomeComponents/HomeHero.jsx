@@ -100,7 +100,7 @@ export default function HomeHero() {
             {titleWords.map((word, i) => (
               <motion.h1
                 key={i}
-                className="text-white text-left font-black text-5xl sm:text-6xl lg:text-7xl drop-shadow-xl"
+                className="text-white text-left font-black text-5xl lg:text-7xl drop-shadow-xl"
                 initial={{ y: 50, opacity: 0 }}
                 animate={{
                   y: isLoaded ? 0 : 50,

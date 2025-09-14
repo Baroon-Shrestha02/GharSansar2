@@ -5,73 +5,90 @@ const TestimonialsCarousel = () => {
   const testimonials = [
     {
       id: 1,
-      text: "Home is where the heart is—or is that cookies? Because many times our home has been at Bernice's, where the cookies are what all cookies should be.",
-      author: "Time Out",
-      logo: "Time Out",
-      image:
-        "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=120&h=120&fit=crop&crop=center",
+      text: "I purchased home fittings from Ghar Sansar and was impressed by the range of options. Their products are reliable and made my kitchen setup easier.",
+      author: "Anil Sharma",
+      image: "A",
       bgColor: "bg-emerald-700",
       textColor: "text-white",
     },
     {
       id: 2,
-      text: "Why You Need To Go: This is one of those bakeries that's like stepping into a little oasis. Not only is the decor so beautiful and so serene, but the pastries themselves are incredible, too.",
-      author: "MTL Blog",
-      logo: "MTL BLOG",
-      image:
-        "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=120&h=120&fit=crop&crop=center",
+      text: "Delight has been my trusted place for construction equipment. Their delivery was quick, and the staff helped me pick the right tools.",
+      author: "Bina Thapa",
+      image: "B",
       bgColor: "bg-[#009F8A]",
       textColor: "text-white",
     },
     {
       id: 3,
-      text: "Bernice Bakery offers an exceptional selection of artisanal pastries and cakes. Every bite is a testament to their commitment to quality and craftsmanship.",
-      author: "Food & Wine",
-      logo: "F&W",
-      image:
-        "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=120&h=120&fit=crop&crop=center",
+      text: "I got tiles and bathroom fittings from GS. The designs were modern, and the quality has held up really well over time.",
+      author: "Sanjay Koirala",
+      image: "S",
       bgColor: "bg-emerald-700",
       textColor: "text-white",
     },
     {
       id: 4,
-      text: "A hidden gem in Montreal's bakery scene. The attention to detail in both presentation and taste makes Bernice a must-visit destination for any pastry lover.",
-      author: "Eater Montreal",
-      logo: "EATER",
-      image:
-        "https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=120&h=120&fit=crop&crop=center",
+      text: "While building our new home, we bought several essentials from Ghar Sansar. Everything was reasonably priced and durable.",
+      author: "Priya Adhikari",
+      image: "P",
+      bgColor: "bg-[#009F8A]",
+      textColor: "text-white",
+    },
+    {
+      id: 5,
+      text: "Delight’s collection of hardware and electrical items made things simple for me. Great value and easy process overall.",
+      author: "Ramesh Shrestha",
+      image: "R",
+      bgColor: "bg-emerald-700",
+      textColor: "text-white",
+    },
+    {
+      id: 6,
+      text: "GS was very helpful during my house renovation. Their staff gave me genuine suggestions, and the items were high quality.",
+      author: "Meena Gurung",
+      image: "M",
+      bgColor: "bg-[#009F8A]",
+      textColor: "text-white",
+    },
+    {
+      id: 7,
+      text: "I ordered sanitary fittings from Ghar Sansar, and they turned out perfect. The whole buying process was smooth and professional.",
+      author: "Deepak Joshi",
+      image: "D",
+      bgColor: "bg-emerald-700",
+      textColor: "text-white",
+    },
+    {
+      id: 8,
+      text: "Delight and GS both have become my go-to for building supplies. Good service, affordable prices, and trustworthy quality.",
+      author: "Kritika Lama",
+      image: "K",
       bgColor: "bg-[#009F8A]",
       textColor: "text-white",
     },
   ];
 
-  // Create an extended array for seamless infinite scroll
-  const extendedTestimonials = [
-    ...testimonials,
-    ...testimonials,
-    ...testimonials,
-  ];
-
   return (
-    <div className="w-full py-16 bg-gray-50 overflow-hidden">
+    <div className="w-full py-16 ">
       <div className="text-center mb-20">
-        <h2 className="text-6xl lg:text-8xl font-black text-gray-900 mb-6 leading-tight">
-          Why People{" "}
-          <span className="text-transparent bg-clip-text bg-[#009F8A]">
-            Choose Us?
-          </span>
+        <h2 className="text-5xl lg:text-7xl font-black text-gray-900 mb-6 leading-tight">
+          Why People <span className=" text-secondary">Choose Us?</span>
         </h2>
-        <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
+        {/* <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
           Hear from our satisfied customers
-        </p>
+        </p> */}
       </div>
 
       <div className="relative">
-        {/* Infinite scrolling container */}
-        <div className="flex gap-8 animate-scroll">
-          {extendedTestimonials.map((testimonial, index) => (
+        {/* Horizontally scrollable container */}
+        <div
+          className="flex gap-8 overflow-x-auto scrollbar-hide px-12 py-4"
+          style={{ scrollBehavior: "smooth" }}
+        >
+          {testimonials.map((testimonial, index) => (
             <div
-              key={`${testimonial.id}-${index}`}
+              key={testimonial.id}
               className={`flex-shrink-0 w-96 h-80 ${testimonial.bgColor} rounded-3xl p-8 flex flex-col justify-between ${testimonial.textColor} shadow-lg hover:shadow-xl transition-shadow duration-300 relative overflow-hidden`}
             >
               {/* Background Image */}
@@ -96,11 +113,6 @@ const TestimonialsCarousel = () => {
               {/* Author/Logo */}
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                  <img
-                    src={testimonial.image}
-                    alt={testimonial.author}
-                    className="w-12 h-12 rounded-full object-cover border-2 border-white/20"
-                  />
                   <div>
                     <div className="text-lg font-bold tracking-wider opacity-90">
                       {testimonial.logo}
@@ -115,27 +127,18 @@ const TestimonialsCarousel = () => {
           ))}
         </div>
 
-        {/* Gradient overlays for seamless effect */}
+        {/* Gradient overlays for visual effect */}
         <div className="absolute top-0 left-0 w-12 h-full bg-gradient-to-r from-gray-50 to-transparent pointer-events-none z-10"></div>
         <div className="absolute top-0 right-0 w-12 h-full bg-gradient-to-l from-gray-50 to-transparent pointer-events-none z-10"></div>
       </div>
 
       <style jsx>{`
-        @keyframes scroll {
-          0% {
-            transform: translateX(0);
-          }
-          100% {
-            transform: translateX(-33.333%);
-          }
+        .scrollbar-hide {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
         }
-
-        .animate-scroll {
-          animation: scroll 20s linear infinite;
-        }
-
-        .animate-scroll:hover {
-          animation-play-state: paused;
+        .scrollbar-hide::-webkit-scrollbar {
+          display: none;
         }
       `}</style>
     </div>

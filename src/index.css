@@ -11,7 +11,15 @@
   src: url("../src/Components/Utils/Fonts/Roca\ Two\ Black.ttf")
     format("truetype");
 }
+@font-face {
+  font-family: "rocalight";
+  src: url("./Components/Utils/Fonts/Roca\ light.ttf") format("truetype");
+}
 
 * {
   font-family: "roca";
+}
+
+.light {
+  font-family: "rocalight";
 }

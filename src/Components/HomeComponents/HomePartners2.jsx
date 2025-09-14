@@ -82,13 +82,13 @@ export default function HomePartners2() {
               delay: index * 0.2,
               duration: 1.5,
             }}
-            whileHover={{
-              scale: card.scale * 1.05,
-              rotate: card.rotation * 1.2,
-              y: card.y - 10,
-              zIndex: 10,
-              transition: { duration: 0.3 },
-            }}
+            // whileHover={{
+            //   scale: card.scale * 1.05,
+            //   rotate: card.rotation * 1.2,
+            //   y: card.y - 10,
+            //   zIndex: 10,
+            //   transition: { duration: 0.3 },
+            // }}
           >
             <div className="relative w-full h-full">
               <img
@@ -131,7 +131,7 @@ export default function HomePartners2() {
               {titleWords.map((word, i) => (
                 <motion.h1
                   key={i}
-                  className="text-white font-black text-5xl sm:text-6xl lg:text-7xl drop-shadow-2xl bg-gradient-to-r from-white to-purple-200 bg-clip-text text-transparent"
+                  className="text-white font-black text-5xl lg:text-7xl drop-shadow-2xl"
                   initial={{ y: 50, opacity: 0 }}
                   animate={{
                     y: isLoaded ? 0 : 50,
