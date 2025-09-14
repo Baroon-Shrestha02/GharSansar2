@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@theme {
+  --color-back: #2a323f;
+  --color-primary: #ff9301;
+  --color-secondary: #0d50ba;
+}
+
+@font-face {
+  font-family: "roca";
+  src: url("../src/Components/Utils/Fonts/Roca\ Two\ Black.ttf")
+    format("truetype");
+}
+
+* {
+  font-family: "roca";
+}
