@@ -162,7 +162,7 @@ export default function ContactForm() {
   }, [currentPartner.color]);
 
   return (
-    <section className="bg-gradient-to-b from-gray-200 to-white py-16 mx-12 px-8 rounded-t-3xl relative -mt-30 z-20">
+    <section className="bg-gradient-to-b from-gray-200 to-white py-10 sm:py-12 md:py-16 px-4 sm:px-6 md:px-8 rounded-t-3xl relative z-20">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
@@ -180,11 +180,11 @@ export default function ContactForm() {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-start">
+        <div className="grid lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-12 items-start">
           {/* Left Column - Contact Details */}
           <div className="space-y-8">
             {/* Partner Selection Card */}
-            <div className="bg-white rounded-3xl shadow-xl p-8">
+            <div className="bg-white rounded-3xl shadow-xl p-6 sm:p-8">
               <h3
                 className="text-xl font-serif font-bold mb-4"
                 style={{ color: currentPartner.color }}
@@ -219,7 +219,7 @@ export default function ContactForm() {
             </div>
 
             {/* Contact Information Cards */}
-            <div className="bg-white rounded-3xl shadow-xl p-8 space-y-6">
+            <div className="bg-white rounded-3xl shadow-xl p-6 sm:p-8 space-y-6">
               <h3
                 className="text-2xl font-serif font-bold mb-6"
                 style={{ color: currentPartner.color }}
@@ -329,7 +329,7 @@ export default function ContactForm() {
           </div>
 
           {/* Right Column - Contact Form */}
-          <div className="bg-white rounded-3xl shadow-xl p-8">
+          <div className="bg-white rounded-3xl shadow-xl p-6 sm:p-8">
             <h3
               className="text-2xl font-serif font-bold mb-6 transition-colors duration-300"
               style={{ color: currentPartner.color }}
@@ -503,7 +503,7 @@ export default function ContactForm() {
         </div>
 
         {/* Embedded Map */}
-        <div className="bg-white rounded-3xl w-full shadow-xl overflow-hidden mt-12 transition-all duration-300">
+        <div className="bg-white rounded-3xl w-full shadow-xl overflow-hidden mt-10 sm:mt-12 transition-all duration-300">
           <div
             className="p-6 text-white transition-all duration-300"
             style={{ backgroundColor: currentPartner.color }}
@@ -515,7 +515,7 @@ export default function ContactForm() {
               Visit us at our location for personalized service
             </p>
           </div>
-          <div className="h-[350px] w-full">
+          <div className="w-full h-64 sm:h-80 md:h-[350px]">
             <iframe
               key={formData.partner} // Force re-render when partner changes
               title={`${currentPartner.name} Location`}
@@ -532,18 +532,18 @@ export default function ContactForm() {
         </div>
 
         {/* Additional Info Section */}
-        <div className="mt-12 grid md:grid-cols-3 gap-6">
+        <div className="mt-10 sm:mt-12 grid sm:grid-cols-2 md:grid-cols-3 gap-6">
           {Object.entries(partners).map(([key, partner]) => (
             <div
               key={key}
-              className={`bg-white rounded-2xl p-6 shadow-lg transition-all duration-300 cursor-pointer hover:shadow-xl ${
+              className={`bg-white rounded-2xl p-5 sm:p-6 shadow-lg transition-all duration-300 cursor-pointer hover:shadow-xl ${
                 key === formData.partner
-                  ? "ring-2 ring-opacity-50 transform scale-105"
+                  ? "ring-2 ring-opacity-50 md:scale-105"
                   : "hover:scale-102"
               }`}
               style={{
-                ringColor:
-                  key === formData.partner ? partner.color : "transparent",
+                "--tw-ring-color":
+                  key === formData.partner ? partner.color : undefined,
                 borderTop: `4px solid ${partner.color}`,
               }}
               onClick={() => handlePartnerChange({ target: { value: key } })}
