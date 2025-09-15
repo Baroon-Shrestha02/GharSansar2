@@ -34,10 +34,6 @@ export default function ProductsSection() {
     <section className="relative z-20 -mt-30 container mx-auto min-h-screen rounded-t-2xl py-12">
       {/* Enhanced Header with Background */}
       <div className="relative overflow-hdden bg-gradient-to-br from-slate-50 via-white to-blue-50 px-6 py-12 mb-8 rounded-2xl">
-        {/* Background decoration */}
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(59,130,246,0.05),transparent_70%)]"></div>
-        <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-bl from-blue-100/30 to-transparent rounded-full -translate-y-32 translate-x-32"></div>
-
         <div className="relative max-w-7xl mx-auto">
           <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8">
             {/* Title Section */}
