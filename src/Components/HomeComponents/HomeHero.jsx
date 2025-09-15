@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 // CardStack Component (embedded inside Hero)
 const CardStack = ({ isInView }) => {
@@ -137,9 +138,11 @@ export default function HomeHero() {
             }}
             transition={{ delay: 2.0, duration: 0.9, ease: "easeOut" }}
           >
-            <button className="px-8 py-3 bg-orange-500 text-white font-bold rounded-full shadow-lg hover:bg-orange-600 transition">
-              Explore Materials
-            </button>
+            <Link to="/products">
+              <button className="px-8 py-3 bg-orange-500 text-white font-bold rounded-full shadow-lg hover:bg-orange-600 transition">
+                Explore Materials
+              </button>
+            </Link>
           </motion.div>
         </div>
 

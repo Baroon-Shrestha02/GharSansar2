@@ -1,5 +1,6 @@
 import { Star, ChevronLeft, ChevronRight, Heart } from "lucide-react";
 import React, { useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function HorizontalProducts() {
   const [isVisible, setIsVisible] = useState(false);
@@ -26,14 +27,6 @@ export default function HorizontalProducts() {
       company: "Ghar Sansar",
     },
     {
-      id: "bricks",
-      name: "CLAY BRICKS",
-      image: "home/bricks.jpg",
-      description: "Per 100 pcs • Standard size",
-      price: 1200,
-      company: "GS",
-    },
-    {
       id: "tiles",
       name: "CERAMIC TILES",
       image: "home/tiles.jpg",
@@ -44,7 +37,7 @@ export default function HorizontalProducts() {
     {
       id: "paint",
       name: "INTERIOR PAINT",
-      image: "home/paint.jpg",
+      image: "home/paints.png",
       description: "20L bucket • Premium finish",
       price: 3200,
       company: "Ghar Sansar",
@@ -52,7 +45,7 @@ export default function HorizontalProducts() {
     {
       id: "pipes",
       name: "PVC PIPES",
-      image: "home/pipes.webp",
+      image: "home/pvc.png",
       description: "Per 10ft • Water supply use",
       price: 400,
       company: "Delight",
@@ -260,9 +253,11 @@ export default function HorizontalProducts() {
 
         {/* Bottom CTA */}
         <div className="text-center mt-6">
-          <button className="bg-primary text-white font-bold px-12 py-4 rounded-full text-lg transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl">
-            EXPLORE ALL PRODUCTS
-          </button>
+          <Link to="/products">
+            <button className="bg-primary capitalize text-white font-bold px-12 py-4 rounded-full text-lg transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl">
+              explore all products
+            </button>
+          </Link>
         </div>
       </div>
 

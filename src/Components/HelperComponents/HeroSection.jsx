@@ -6,7 +6,6 @@ import { ChevronRight, Play, Pause } from "lucide-react";
 const HeroSection = ({
   title,
   description,
-  breadcrumbs,
   backgroundType,
   backgroundSrc,
   videoSrc,
@@ -23,7 +22,7 @@ const HeroSection = ({
       case "light":
         return "bg-white bg-opacity-30";
       case "gradient":
-        return "bg-gradient-to-t from-secondary via-transparent to-secondary";
+        return "bg-gradient-to-t from-white via-transparent to-secondary";
       default:
         return "";
     }
@@ -107,7 +106,9 @@ const HeroSection = ({
       )}
 
       {/* Overlay */}
-      <div className={`absolute inset-0 z-10 ${getOverlayClasses()}`} />
+      <div
+        className={`absolute bg-black/40 inset-0 z-10 ${getOverlayClasses()}`}
+      />
 
       {/* Video Controls */}
       {backgroundType === "video" && (
@@ -128,7 +129,7 @@ const HeroSection = ({
           </h1>
 
           {/* Description */}
-          <p className="text-lg md:text-xl text-gray-200 leading-relaxed max-w-3xl">
+          <p className="text-lg md:text-xl text-white leading-relaxed max-w-3xl">
             {renderAnimatedText(description)}
           </p>
         </div>

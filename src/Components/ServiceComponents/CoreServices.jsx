@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import {
   CheckCircle,
   ArrowRight,
@@ -9,6 +9,7 @@ import {
   Award,
 } from "lucide-react";
 import servicesData from "./services";
+import { Link } from "react-router-dom";
 
 // Mock services data - replace with your actual import
 
@@ -16,6 +17,7 @@ export default function CoreServices() {
   const [hoveredIndex, setHoveredIndex] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedService, setSelectedService] = useState(null);
+  const scrollYRef = useRef(0);
 
   // Process steps for modal
   const processSteps = [
@@ -66,41 +68,40 @@ export default function CoreServices() {
   // Enhanced scroll management
   useEffect(() => {
     if (isModalOpen) {
-      // Save current scroll position
-      const scrollY = window.scrollY;
+      scrollYRef.current = window.scrollY;
       document.body.style.position = "fixed";
-      document.body.style.top = `-${scrollY}px`;
+      document.body.style.top = `-${scrollYRef.current}px`;
+      document.body.style.left = "0";
+      document.body.style.right = "0";
       document.body.style.width = "100%";
       document.body.style.overflowY = "hidden";
 
-      // Hide navbar if it exists
       const navbar = document.querySelector("nav");
       if (navbar) {
         navbar.style.display = "none";
       }
     } else {
-      // Restore scroll position
-      const scrollY = document.body.style.top;
+      const y = scrollYRef.current;
       document.body.style.position = "";
       document.body.style.top = "";
+      document.body.style.left = "";
+      document.body.style.right = "";
       document.body.style.width = "";
       document.body.style.overflowY = "";
 
-      if (scrollY) {
-        window.scrollTo(0, parseInt(scrollY || "0") * -1);
-      }
-
-      // Show navbar
       const navbar = document.querySelector("nav");
       if (navbar) {
         navbar.style.display = "";
       }
+
+      window.scrollTo(0, y);
     }
 
     return () => {
-      // Cleanup on unmount
       document.body.style.position = "";
       document.body.style.top = "";
+      document.body.style.left = "";
+      document.body.style.right = "";
       document.body.style.width = "";
       document.body.style.overflowY = "";
 
@@ -215,11 +216,11 @@ export default function CoreServices() {
         </div>
 
         {/* Bottom CTA */}
-        <div className="text-center mt-16">
+        {/* <div className="text-center mt-16">
           <button className="bg-primary text-white px-8 py-4 rounded-2xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
             Get Started Today
           </button>
-        </div>
+        </div> */}
       </div>
 
       {/* Enhanced Modal */}
@@ -313,9 +314,11 @@ export default function CoreServices() {
                   >
                     Close
                   </button>
-                  <button className="px-6 py-2.5 bg-secondary text-white rounded-xl hover:from-blue-700 hover:to-purple-700 transition-all duration-300 shadow-lg text-sm font-medium">
-                    Start Consultation
-                  </button>
+                  <Link to="/contact">
+                    <button className="px-6 py-2.5 bg-secondary text-white rounded-xl hover:from-blue-700 hover:to-purple-700 transition-all duration-300 shadow-lg text-sm font-medium">
+                      Start Consultation
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>

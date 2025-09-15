@@ -24,71 +24,55 @@ export default function HomeFeatured() {
   const carouselItems = [
     {
       id: 1,
-      image:
-        "https://images.unsplash.com/photo-1581091215367-59ab6b5f2ef9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "home/featured/cement.png",
       shape: "rounded",
       title: "Cement Bags",
     },
     {
       id: 2,
-      image:
-        "https://images.unsplash.com/photo-1603791452906-b06ea82e02d0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "home/featured/tanks.jpg",
       shape: "rounded",
       title: "Steel Rods",
     },
     {
       id: 3,
-      image:
-        "https://images.unsplash.com/photo-1613977257365-aaae5a9817ee?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "home/featured/brick.jpg",
       shape: "rounded",
       title: "Clay Bricks",
     },
     {
       id: 4,
-      image:
-        "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "home/featured/basin.jpg",
       shape: "rounded",
       title: "Wall Paints",
     },
     {
       id: 5,
-      image:
-        "https://images.unsplash.com/photo-1581092919535-7147b9732a14?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "home/featured/tiles.avif",
       shape: "rounded",
       title: "Floor Tiles",
     },
     {
       id: 6,
-      image:
-        "https://images.unsplash.com/photo-1614594975525-94f741c0a7d2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "home/featured/paints.webp",
       shape: "rounded",
       title: "Wood Planks",
     },
     {
       id: 7,
-      image:
-        "https://images.unsplash.com/photo-1614064641621-2f6b7f6a67b7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "home/featured/roof.jpg",
       shape: "rounded",
       title: "Roof Sheets",
     },
     {
       id: 8,
-      image:
-        "https://images.unsplash.com/photo-1625149246555-5dcfcec5c64d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "home/featured/pipes.jpeg",
       shape: "rounded",
       title: "PVC Pipes",
     },
     {
-      id: 9,
-      image:
-        "https://images.unsplash.com/photo-1581093588401-22afc95f6f0d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      shape: "rounded",
-      title: "Sand & Gravel",
-    },
-    {
       id: 10,
-      image:
-        "https://images.unsplash.com/photo-1618222780772-ef9cf774a5cc?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "home/featured/electric.png",
       shape: "rounded",
       title: "Electrical Items",
     },

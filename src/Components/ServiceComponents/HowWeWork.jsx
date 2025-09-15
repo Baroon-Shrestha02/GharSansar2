@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import {
   Calendar,
   Users,
@@ -16,72 +16,89 @@ import {
   Zap,
   X,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
-// Mock WorkProcess data - replace with your actual import
+// Updated WorkProcess for Ghar Sansar with better gradients
 const WorkProcess = [
   {
     id: 1,
-    title: "Project Discovery",
+    title: "Project Consultation",
     description:
-      "We dive deep into understanding your vision, requirements, and goals through detailed consultation.",
-    icon: "Target",
+      "We begin by understanding your dream home requirements, budget, and preferred design style.",
+    icon: "Users",
     duration: "1-2 Days",
     details: [
-      "Initial consultation call",
-      "Site visit and assessment",
-      "Budget planning and timeline",
-      "Requirements documentation",
+      "Initial discussion with our experts",
+      "Site visit and measurements",
+      "Budget estimation and timeline planning",
+      "Documenting your requirements",
     ],
-    color: "from-blue-500 to-cyan-500",
-    bgColor: "from-blue-50 to-cyan-50",
+    color: "from-cyan-400 to-blue-500", // Vibrant cyan-blue
+    bgColor: "from-cyan-50 to-blue-100", // Soft cyan-blue background
   },
   {
     id: 2,
     title: "Design & Planning",
     description:
-      "Our expert team creates comprehensive plans and designs tailored to your specific needs.",
+      "Our architects and designers create detailed home plans, layouts, and 3D visualizations tailored to your needs.",
     icon: "Calendar",
     duration: "3-5 Days",
     details: [
-      "Detailed project planning",
-      "3D visualizations",
-      "Material selection",
-      "Final approval process",
+      "Architectural design and floor planning",
+      "Interior design and material selection",
+      "3D visualization of your home",
+      "Approval and modifications",
     ],
-    color: "from-emerald-500 to-teal-500",
-    bgColor: "from-emerald-50 to-teal-50",
+    color: "from-emerald-400 to-teal-500", // Fresh green-teal
+    bgColor: "from-emerald-50 to-teal-100", // Soft green background
   },
   {
     id: 3,
-    title: "Implementation",
+    title: "Material Procurement",
     description:
-      "Professional execution with regular updates, quality checks, and milestone tracking.",
+      "We source high-quality building materials, furniture, and décor items to bring your home vision to life.",
     icon: "Hammer",
-    duration: "Variable",
+    duration: "2-4 Days",
     details: [
-      "Project kickoff meeting",
-      "Daily progress updates",
-      "Quality assurance checks",
-      "Milestone completion",
+      "Selection of construction materials",
+      "Sourcing furniture & fixtures",
+      "Interior décor items selection",
+      "Vendor coordination and delivery schedule",
     ],
-    color: "from-purple-500 to-pink-500",
-    bgColor: "from-purple-50 to-pink-50",
+    color: "from-purple-400 to-pink-500", // Elegant purple-pink
+    bgColor: "from-purple-50 to-pink-100", // Light soft background
   },
   {
     id: 4,
-    title: "Delivery & Support",
+    title: "Construction & Implementation",
     description:
-      "Final handover with comprehensive warranty and ongoing support for complete satisfaction.",
+      "Our skilled professionals execute the construction and interior works with quality assurance at every step.",
+    icon: "Hammer",
+    duration: "Variable",
+    details: [
+      "Foundation and structural work",
+      "Electrical and plumbing installation",
+      "Interior finishing and painting",
+      "Quality checks and supervision",
+    ],
+    color: "from-orange-400 to-red-500", // Warm orange-red
+    bgColor: "from-orange-50 to-red-100", // Light background
+  },
+  {
+    id: 5,
+    title: "Handover & Support",
+    description:
+      "We deliver your dream home fully ready with complete handover documentation and ongoing support.",
     icon: "Award",
     duration: "Ongoing",
     details: [
-      "Final quality inspection",
-      "Project handover",
-      "Warranty documentation",
-      "Ongoing support",
+      "Final inspection and quality approval",
+      "Handover of keys and documentation",
+      "Warranty and maintenance guidance",
+      "Ongoing support and assistance",
     ],
-    color: "from-orange-500 to-red-500",
-    bgColor: "from-orange-50 to-red-50",
+    color: "from-indigo-400 to-purple-500", // Deep indigo-purple
+    bgColor: "from-indigo-50 to-purple-100", // Soft matching background
   },
 ];
 
@@ -102,6 +119,7 @@ export default function HowWeWork() {
   const [isAutoPlay, setIsAutoPlay] = useState(true);
   const [selectedStep, setSelectedStep] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const scrollYRef = useRef(0);
 
   // Auto-advance steps
   useEffect(() => {
@@ -117,26 +135,29 @@ export default function HowWeWork() {
   // Modal scroll management
   useEffect(() => {
     if (isModalOpen) {
-      const scrollY = window.scrollY;
+      scrollYRef.current = window.scrollY;
       document.body.style.position = "fixed";
-      document.body.style.top = `-${scrollY}px`;
+      document.body.style.top = `-${scrollYRef.current}px`;
+      document.body.style.left = "0";
+      document.body.style.right = "0";
       document.body.style.width = "100%";
       document.body.style.overflowY = "hidden";
     } else {
-      const scrollY = document.body.style.top;
+      const y = scrollYRef.current;
       document.body.style.position = "";
       document.body.style.top = "";
+      document.body.style.left = "";
+      document.body.style.right = "";
       document.body.style.width = "";
       document.body.style.overflowY = "";
-
-      if (scrollY) {
-        window.scrollTo(0, parseInt(scrollY || "0") * -1);
-      }
+      window.scrollTo(0, y);
     }
 
     return () => {
       document.body.style.position = "";
       document.body.style.top = "";
+      document.body.style.left = "";
+      document.body.style.right = "";
       document.body.style.width = "";
       document.body.style.overflowY = "";
     };
@@ -207,7 +228,7 @@ export default function HowWeWork() {
                   >
                     <IconComponent className="w-8 h-8" />
                     {index <= activeStep && (
-                      <div className="absolute inset-0 rounded-full bg-white/20 animate-ping"></div>
+                      <div className="absolute inset-0 rounded-full bg-white/20 "></div>
                     )}
                   </button>
                 );
@@ -437,11 +458,13 @@ export default function HowWeWork() {
                   >
                     Close
                   </button>
-                  <button
-                    className={`px-6 py-2.5 bg-gradient-to-r ${selectedStep.color} text-white rounded-xl hover:shadow-lg transition-all duration-300 font-medium`}
-                  >
-                    Get Started
-                  </button>
+                  <Link to="/contact">
+                    <button
+                      className={`px-6 py-2.5 bg-gradient-to-r ${selectedStep.color} text-white rounded-xl hover:shadow-lg transition-all duration-300 font-medium`}
+                    >
+                      Get Started
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>

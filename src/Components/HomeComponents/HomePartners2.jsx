@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 export default function HomePartners2() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -163,9 +164,11 @@ export default function HomePartners2() {
               }}
               transition={{ delay: 2.0, duration: 0.9, ease: "easeOut" }}
             >
-              <button className="px-8 py-4 bg-gradient-to-r from-orange-500 to-red-500 text-white font-bold rounded-2xl shadow-xl hover:from-orange-600 hover:to-red-600 transform hover:scale-105 transition-all duration-300">
-                Explore More
-              </button>
+              <Link to="/about">
+                <button className="px-8 py-4 bg-primary text-white font-bold rounded-2xl shadow-xl hover:from-orange-600 hover:to-red-600 transform hover:scale-105 transition-all duration-300">
+                  Explore More
+                </button>
+              </Link>
             </motion.div>
           </div>
 

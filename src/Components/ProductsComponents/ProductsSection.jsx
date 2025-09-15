@@ -177,10 +177,9 @@ export default function ProductsSection() {
           <button
             onClick={loadMore}
             disabled={isLoading}
-            className="relative overflow-hidden px-8 py-4 font-semibold text-white bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 transition-all duration-300 group rounded-xl shadow-lg hover:shadow-xl disabled:opacity-70 disabled:cursor-not-allowed"
+            className="relative overflow-hidden px-8 py-4 font-semibold text-white bg-secondary transition-all duration-300 group rounded-xl shadow-lg hover:shadow-xl disabled:opacity-70 disabled:cursor-not-allowed"
           >
             {/* Animated background effect */}
-            <span className="absolute inset-0 bg-gradient-to-r from-blue-400 to-blue-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
 
             {/* Button content */}
             <span className="relative z-10 flex items-center justify-center gap-2">
@@ -209,10 +208,7 @@ export default function ProductsSection() {
                   Loading...
                 </>
               ) : (
-                <>
-                  Load More Products
-                  <ChevronDown className="h-4 w-4" />
-                </>
+                <>Load More Products</>
               )}
             </span>
           </button>

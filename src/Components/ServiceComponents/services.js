@@ -18,7 +18,7 @@ const servicesData = [
   },
   {
     // company: "Premium Appliance Store",
-    company: "GS",
+    company: "GS Alliance",
     tagline: "Modern appliances for contemporary living spaces",
     description:
       "Your one-stop destination for high-quality home appliances. We offer a wide range of kitchen and household appliances from trusted brands with professional installation services.",
@@ -35,7 +35,7 @@ const servicesData = [
   },
   {
     // company: "Interior Design Studio",
-    company: "Delight",
+    company: "Delight Color World & Suppliers",
     tagline: "Transforming spaces into beautiful, functional environments",
     description:
       "Our creative team specializes in creating stunning interior spaces that reflect your personality and lifestyle. From concept to completion, we handle every detail with care.",

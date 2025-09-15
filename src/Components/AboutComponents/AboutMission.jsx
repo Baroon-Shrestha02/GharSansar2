@@ -42,7 +42,7 @@ export default function AboutMission() {
             transition={{ duration: 1 }}
           >
             <img
-              src="/images/Mission.jpg"
+              src="about/mission.jpg"
               alt="Baking Mission"
               className="w-full h-full rounded-3xl object-cover shadow-lg"
             />

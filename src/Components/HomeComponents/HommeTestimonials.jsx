@@ -8,8 +8,8 @@ const TestimonialsCarousel = () => {
       text: "I purchased home fittings from Ghar Sansar and was impressed by the range of options. Their products are reliable and made my kitchen setup easier.",
       author: "Anil Sharma",
       image: "A",
-      bgColor: "bg-emerald-700",
-      textColor: "text-white",
+      bgColor: "bg-gradient-to-r from-green-100 to-blue-100",
+      textColor: "text-secondary",
     },
     {
       id: 2,
@@ -24,8 +24,8 @@ const TestimonialsCarousel = () => {
       text: "I got tiles and bathroom fittings from GS. The designs were modern, and the quality has held up really well over time.",
       author: "Sanjay Koirala",
       image: "S",
-      bgColor: "bg-emerald-700",
-      textColor: "text-white",
+      bgColor: "bg-gradient-to-r from-green-100 to-blue-100",
+      textColor: "text-secondary",
     },
     {
       id: 4,
@@ -40,8 +40,8 @@ const TestimonialsCarousel = () => {
       text: "Delight’s collection of hardware and electrical items made things simple for me. Great value and easy process overall.",
       author: "Ramesh Shrestha",
       image: "R",
-      bgColor: "bg-emerald-700",
-      textColor: "text-white",
+      bgColor: "bg-gradient-to-r from-green-100 to-blue-100",
+      textColor: "text-secondary",
     },
     {
       id: 6,
@@ -56,8 +56,8 @@ const TestimonialsCarousel = () => {
       text: "I ordered sanitary fittings from Ghar Sansar, and they turned out perfect. The whole buying process was smooth and professional.",
       author: "Deepak Joshi",
       image: "D",
-      bgColor: "bg-emerald-700",
-      textColor: "text-white",
+      bgColor: "bg-gradient-to-r from-green-100 to-blue-100",
+      textColor: "text-secondary",
     },
     {
       id: 8,

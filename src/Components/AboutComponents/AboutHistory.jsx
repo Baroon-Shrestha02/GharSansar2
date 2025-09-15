@@ -15,8 +15,8 @@ export default function AboutHistory() {
             transition={{ duration: 1 }}
           >
             <img
-              src="/images/medium-shot-woman-working-bakery.jpg"
-              alt="Our Bakery"
+              src="about/about1.jpeg"
+              alt="Our Work"
               className="w-full h-full rounded-3xl shadow-md object-cover"
             />
           </motion.div>
@@ -30,25 +30,25 @@ export default function AboutHistory() {
             transition={{ duration: 1 }}
           >
             <h2 className="text-5xl md:text-6xl font-serif font-bold mb-2 text-secondary">
-              Our Story
+              Our Work
             </h2>
 
             <p className="text-lg md:text-xl leading-relaxed text-secondary light">
-              Born in the heart of the neighborhood, our bakery started as a
-              small family dream in 1995. With the smell of fresh croissants
-              drifting down the streets and the sound of early morning coffee
-              brewing, we’ve grown into a cozy corner where stories are shared
-              and memories are made. Every loaf, cake, and cookie we bake
-              carries that love forward — warm, comforting, and always fresh.
+              At the heart of our operations, Ghar Sansar, GS Alliance, and
+              Delight work together to provide high-quality home-building
+              materials and supplies across Nepal. From cement, rods, and bricks
+              to paint, tiles, and electrical items, we ensure that every
+              product meets strict quality standards and reaches your doorstep
+              reliably.
             </p>
 
             <p className="text-lg md:text-xl leading-relaxed text-secondary light">
-              What began with a single oven and a passion for homemade flavor
-              has now blossomed into a beloved gathering place. Our recipes are
-              rooted in tradition, but we’re not afraid to sprinkle in a little
-              innovation. Whether it’s a seasonal tart, custom cake, or just
-              your favorite muffin, we bake with heart, soul, and a pinch of
-              magic.
+              Our mission is to simplify construction and renovation for
+              homeowners and contractors alike. With years of experience, our
+              teams at Ghar Sansar, GS Alliance, and Delight combine expertise,
+              trust, and exceptional service to make every project smoother,
+              safer, and more efficient. We’re committed to building not just
+              homes, but lasting relationships with our clients.
             </p>
           </motion.div>
         </div>

@@ -10,7 +10,8 @@ import {
   Clock,
 } from "lucide-react";
 import { Link } from "react-router-dom";
-import { BsWhatsapp } from "react-icons/bs";
+import { BsTiktok, BsWhatsapp } from "react-icons/bs";
+import { FaTiktok } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -44,42 +45,41 @@ export default function Footer() {
 
           {/* Social Media Icons */}
           <div className="flex gap-4">
-            <Link
-              to="#"
-              className="bg-white/10 hover:bg-white/20 p-3 rounded-full transition-all duration-300 hover:scale-110 group"
-            >
-              <Instagram
-                size={20}
-                className="group-hover:text-pink-400 transition-colors duration-300"
-              />
-            </Link>
-            <Link
-              to="#"
+            <a
+              href="https://www.facebook.com/p/Ghar-Sansar-Pvt-Ltd-100054670110720/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-white/10 hover:bg-white/20 p-3 rounded-full transition-all duration-300 hover:scale-110 group"
             >
               <Facebook
                 size={20}
                 className="group-hover:text-blue-400 transition-colors duration-300"
               />
-            </Link>
-            <Link
-              to="#"
+            </a>
+
+            <a
+              href="https://wa.me/9779847875763" // replace with actual number
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-white/10 hover:bg-white/20 p-3 rounded-full transition-all duration-300 hover:scale-110 group"
             >
               <BsWhatsapp
                 size={20}
                 className="group-hover:text-green-400 transition-colors duration-300"
               />
-            </Link>
-            <Link
-              to="#"
+            </a>
+
+            <a
+              href="https://www.tiktok.com/@gharsansarpvt.ltd84?_t=ZS-8zkHiYUZ3zk&_r=1" // replace with actual TikTok profile
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-white/10 hover:bg-white/20 p-3 rounded-full transition-all duration-300 hover:scale-110 group"
             >
-              <Youtube
+              <FaTiktok
                 size={20}
-                className="group-hover:text-red-400 transition-colors duration-300"
+                className="group-hover:text-pink-400 transition-colors duration-300"
               />
-            </Link>
+            </a>
           </div>
         </div>
 
@@ -105,7 +105,7 @@ export default function Footer() {
                 className="text-white/90 hover:text-white hover:translate-x-1 transition-all duration-200 inline-flex items-center group"
               >
                 <span className="w-4 h-1 bg-orange-400 rounded-full mr-3 group-hover:scale-125 transition-transform duration-200"></span>
-                Our Pricing
+                Our Products
               </Link>
             </li>
             <li>
@@ -150,7 +150,7 @@ export default function Footer() {
                 <Phone size={18} className="flex-shrink-0" />
               </div>
               <div>
-                <div className="font-medium">+977-9841234567</div>
+                <div className="font-medium">+977 9801354730</div>
                 <div className="text-sm text-white/70">Call us anytime</div>
               </div>
             </li>
@@ -159,7 +159,7 @@ export default function Footer() {
                 <Mail size={18} className="flex-shrink-0" />
               </div>
               <div>
-                <div className="font-medium">info@gharsansar.com</div>
+                <div className="font-medium">Gsalliancedang@gmail.com</div>
                 <div className="text-sm text-white/70">24/7 support</div>
               </div>
             </li>
@@ -194,14 +194,9 @@ export default function Footer() {
                   <MapPin size={18} className="flex-shrink-0 mt-0.5" />
                 </div>
                 <div>
-                  <div className="font-medium text-sm">Thamel Branch</div>
-                  <div className="text-xs text-white/70 leading-relaxed">
-                    Tridevi Marg, Thamel
-                    <br />
-                    Kathmandu 44600
-                  </div>
-                  <div className="text-xs text-orange-300 mt-1">
-                    Main Location
+                  <div className="font-lg text-sm">Ghar Sansar Pvt Ltd</div>
+                  <div className="font--md text-white/70 leading-relaxed">
+                    Lamahi, Dang, Nepal
                   </div>
                 </div>
               </div>
@@ -214,13 +209,12 @@ export default function Footer() {
                   <MapPin size={18} className="flex-shrink-0 mt-0.5" />
                 </div>
                 <div>
-                  <div className="font-medium text-sm">Patan Branch</div>
-                  <div className="text-xs text-white/70 leading-relaxed">
-                    Lagankhel Road
-                    <br />
-                    Lalitpur 44700
+                  <div className="font-lg text-sm">
+                    Delight Color World & Suppliers
                   </div>
-                  <div className="text-xs text-green-300 mt-1">Now Open</div>
+                  <div className="font-md text-white/70 leading-relaxed">
+                    Lamahi, Dang, Nepal
+                  </div>
                 </div>
               </div>
             </div>
@@ -232,13 +226,12 @@ export default function Footer() {
                   <MapPin size={18} className="flex-shrink-0 mt-0.5" />
                 </div>
                 <div>
-                  <div className="font-medium text-sm">Pokhara Branch</div>
-                  <div className="text-xs text-white/70 leading-relaxed">
-                    Lakeside Road
-                    <br />
-                    Pokhara 33700
+                  <div className="font-lg text-sm">
+                    Gs Alliance trading Pvt Ltd
                   </div>
-                  <div className="text-xs text-blue-300 mt-1">Coming Soon</div>
+                  <div className="font-md text-white/70 leading-relaxed">
+                    Lamahi Gally, Namai, Nepal
+                  </div>
                 </div>
               </div>
             </div>

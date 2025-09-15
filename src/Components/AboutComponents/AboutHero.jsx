@@ -5,9 +5,9 @@ export default function AboutHero() {
   return (
     <HeroSection
       title="About Ghar Sansar Pvt. Ltd"
-      description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia illo quos qui quas ipsa ratione at quae officia animi maiores!"
-      backgroundType="image"
-      backgroundSrc="/about/hero.jpg"
+      description="Ghar Sansar, GS, and Delight deliver quality construction and home-building materials in Nepal. From foundations to finishes, we provide trusted products that help you build with strength and style."
+      backgroundType="video"
+      videoSrc="about/hero.mp4"
       height="70vh"
       overlay="gradient"
       textAlignment="center"
