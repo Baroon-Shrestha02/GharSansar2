@@ -5,7 +5,7 @@ export default function ContactHero() {
   return (
     <HeroSection
       title="Get In Touch with Us."
-      description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia illo quos qui quas ipsa ratione at quae officia animi maiores!"
+      description="We’re here to listen and help. Reach out to us anytime with your questions, feedback, or ideas — let’s stay connected and build together."
       backgroundType="image"
       backgroundSrc="about/hero.jpg"
       height="70vh"

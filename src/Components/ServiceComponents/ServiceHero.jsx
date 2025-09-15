@@ -5,7 +5,7 @@ export default function ServiceHero() {
   return (
     <HeroSection
       title="Our Services"
-      description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia illo quos qui quas ipsa ratione at quae officia animi maiores!"
+      description="We provide reliable and high-quality solutions designed to meet your needs. From expert guidance to tailored support, our services ensure value and satisfaction every step of the way."
       backgroundType="image"
       backgroundSrc="/about/hero.jpg"
       height="70vh"

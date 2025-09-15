@@ -56,9 +56,9 @@ export default function HomeIntro() {
                   }`}
                 >
                   <p className="text-xl lg:text-2xl text-gray-600 font-medium leading-relaxed max-w-lg">
-                    Every bite tells a story of passion, craftsmanship, and the
-                    finest ingredients carefully selected to create moments of
-                    pure joy.
+                    Every product at Ghar Sansar reflects trust, quality, and
+                    care — thoughtfully chosen to bring comfort, style, and
+                    lasting value to your home.
                   </p>
                 </div>
 
