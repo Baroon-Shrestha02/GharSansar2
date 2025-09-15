@@ -1,17 +1,19 @@
 import React from "react";
 import { motion } from "framer-motion";
+const MotionDiv = motion.div;
 
 export default function AboutMission() {
   return (
-    <section className="contianer bg-secondary -mt-30 relative z-10 mx-4 md:mx-20 rounded-3xl">
-      <div className=" py-16 px-6 md:px-20 ">
+    <section className="container bg-secondary -mt-25 md:-mt-30 relative z-10  md:mx-20 rounded-3xl">
+      <div className=" py-16 px-4 md:px-20 ">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
           {/* Text Content - shown first on small screens */}
-          <motion.div
+          <MotionDiv
             className="text-white space-y-6 order-1 md:order-none"
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true, amount: 0.2 }}
           >
             <h2 className="text-5xl md:text-6xl font-serif font-bold mb-2 ">
               Our Mission
@@ -32,21 +34,22 @@ export default function AboutMission() {
               we aim to be your trusted partners in construction — making every
               house a true home.
             </p>
-          </motion.div>
+          </MotionDiv>
 
           {/* Image on Right (default order) */}
-          <motion.div
-            className="w-full h-[400px] md:h-full"
+          <MotionDiv
+            className="w-full aspect-[4/3] md:aspect-auto md:h-full"
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true, amount: 0.2 }}
           >
             <img
               src="about/mission.jpg"
               alt="Baking Mission"
               className="w-full h-full rounded-3xl object-cover shadow-lg"
             />
-          </motion.div>
+          </MotionDiv>
         </div>
       </div>
     </section>

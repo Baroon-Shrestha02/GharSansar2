@@ -124,7 +124,7 @@ const HeroSection = ({
       <div className={getTextContainerClasses()}>
         <div className="max-w-2xl">
           {/* Title */}
-          <h1 className="text-5xl md:text-7xl font-bold text-white mb-4 md:mb-6 leading-tight">
+          <h1 className="text-4xl md:text-7xl font-bold text-white mb-4 md:mb-6 leading-tight">
             {renderAnimatedText(title)}
           </h1>
 
