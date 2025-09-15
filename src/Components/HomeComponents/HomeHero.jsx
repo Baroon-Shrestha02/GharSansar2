@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { useIsLargeScreen } from "../Hooks/useIsLargeScreen";
 
 // CardStack Component (embedded inside Hero)
 const CardStack = ({ isInView }) => {
+  const isLargeScreen = useIsLargeScreen(1024);
+
   const cardData = [
     {
       id: 1,
@@ -11,7 +14,8 @@ const CardStack = ({ isInView }) => {
       alt: "Construction site",
       bgColor: "bg-white",
       rotation: isInView ? -15 : 0,
-      x: isInView ? -250 : 0,
+      x: isLargeScreen ? -250 : -150,
+
       zIndex: 1,
     },
     {
@@ -29,13 +33,13 @@ const CardStack = ({ isInView }) => {
       alt: "Building materials",
       bgColor: "bg-white",
       rotation: isInView ? 15 : 0,
-      x: isInView ? 250 : 0,
+      x: isLargeScreen ? 250 : 150,
       zIndex: 2,
     },
   ];
 
   return (
-    <div className="relative w-56 h-72 sm:w-64 sm:h-80 lg:w-72 lg:h-96 mx-auto">
+    <div className="relative w-46 h-58 sm:w-64 sm:h-80 lg:w-72 lg:h-96 mx-auto">
       {cardData.map((card, index) => (
         <motion.div
           key={card.id}
