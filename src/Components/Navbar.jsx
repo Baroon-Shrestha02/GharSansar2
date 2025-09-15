@@ -176,7 +176,7 @@ export default function Navbar() {
                 <Link
                   to={item.to}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="block px-12 py-6 text-2xl md:text-5xl font-bold text-white hover:text-white transition-all duration-300 transform hover:scale-110 active:scale-95 relative group"
+                  className="block px-12 text-2xl md:text-5xl font-bold text-white hover:text-white transition-all duration-300 transform hover:scale-110 active:scale-95 relative group"
                 >
                   <span className="relative z-10">{item.label}</span>
                   <div className="absolute inset-0 bg-white/10 rounded-2xl scale-0 group-hover:scale-100 transition-transform duration-300 ease-out"></div>
