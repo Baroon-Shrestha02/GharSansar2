@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { useIsLargeScreen } from "../Hooks/useIsLargeScreen";
 
 export default function HomePartners2() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -15,6 +16,8 @@ export default function HomePartners2() {
   const titleWords = "Our Partners.".split(" ");
 
   const CardStack = ({ isInView }) => {
+    const isLargeScreen = useIsLargeScreen(1024);
+
     const cardData = [
       {
         id: 1,
@@ -22,8 +25,8 @@ export default function HomePartners2() {
         alt: "Construction site",
         bgColor: "bg-gradient-to-br from-blue-500 to-purple-600",
         rotation: -8,
-        x: -80,
-        y: -140,
+        x: isLargeScreen ? -80 : -90, // 👈 different for big & small
+        y: isLargeScreen ? -140 : -120,
         zIndex: 1,
         scale: 1.05,
       },
@@ -34,8 +37,8 @@ export default function HomePartners2() {
         alt: "Modern building",
         bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600",
         rotation: 5,
-        x: 30,
-        y: 10,
+        x: isLargeScreen ? 30 : 10,
+        y: isLargeScreen ? 10 : 0,
         zIndex: 2,
         scale: 0.95,
       },
@@ -45,8 +48,8 @@ export default function HomePartners2() {
         alt: "Architecture",
         bgColor: "bg-gradient-to-br from-orange-500 to-red-500",
         rotation: -3,
-        x: 160,
-        y: 140,
+        x: isLargeScreen ? 160 : 90,
+        y: isLargeScreen ? 140 : 120,
         zIndex: 3,
         scale: 0.9,
       },

@@ -39,8 +39,7 @@ export default function SimpleMasonryPortfolio() {
     {
       id: 5,
       title: "Residential Complex",
-      image:
-        "https://images.unsplash.com/photo-1600047508788-786907afb9c4?w=800&h=600&fit=crop",
+      image: "about/home.jpeg",
       height: "medium",
     },
     {
@@ -70,44 +69,26 @@ export default function SimpleMasonryPortfolio() {
     {
       id: 9,
       title: "Art Gallery",
-      image:
-        "https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=800&h=600&fit=crop",
+      image: "about/art.jpeg",
       height: "medium",
-    },
-    {
-      id: 10,
-      title: "Mixed Use Development",
-      image:
-        "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&h=600&fit=crop",
-      height: "short",
     },
     {
       id: 11,
       title: "Shopping Center",
-      image:
-        "https://images.unsplash.com/photo-1600607688960-e095bc23ce83?w=800&h=600&fit=crop",
+      image: "about/shop.jpg",
       height: "tall",
     },
     {
       id: 12,
       title: "Hospital Complex",
-      image:
-        "https://images.unsplash.com/photo-1600607688969-a5bfcd646154?w=800&h=600&fit=crop",
+      image: "about/hospital.jpeg",
       height: "medium",
     },
     {
       id: 13,
       title: "Educational Campus",
-      image:
-        "https://images.unsplash.com/photo-1600607688108-0094e6c39ce9?w=800&h=600&fit=crop",
+      image: "about/school.jpeg",
       height: "short",
-    },
-    {
-      id: 14,
-      title: "Sports Complex",
-      image:
-        "https://images.unsplash.com/photo-1600607688118-e095bc23ce83?w=800&h=600&fit=crop",
-      height: "tall",
     },
   ];
 

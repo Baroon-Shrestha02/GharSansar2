@@ -70,8 +70,8 @@ export default function Navbar() {
                   to={item.to}
                   className={`relative px-6 py-3 rounded-full font-medium transition-all duration-300 hover:scale-110 transform ${
                     isScrolled
-                      ? "text-gray-700 hover:text-[#0d50ba]"
-                      : "text-white hover:text-[#0d50ba]"
+                      ? "text-gray-700 hover:text-secondary"
+                      : "text-white hover:text-white"
                   } group overflow-hidden`}
                 >
                   <span className="relative z-10">{item.label}</span>
@@ -176,7 +176,7 @@ export default function Navbar() {
                 <Link
                   to={item.to}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="block px-12 py-6 text-4xl md:text-5xl font-bold text-white hover:text-[#0d50ba] transition-all duration-300 transform hover:scale-110 active:scale-95 relative group"
+                  className="block px-12 py-6 text-4xl md:text-5xl font-bold text-white hover:text-white transition-all duration-300 transform hover:scale-110 active:scale-95 relative group"
                 >
                   <span className="relative z-10">{item.label}</span>
                   <div className="absolute inset-0 bg-white/10 rounded-2xl scale-0 group-hover:scale-100 transition-transform duration-300 ease-out"></div>
