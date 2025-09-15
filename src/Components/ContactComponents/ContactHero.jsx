@@ -7,7 +7,7 @@ export default function ContactHero() {
       title="Get In Touch with Us."
       description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia illo quos qui quas ipsa ratione at quae officia animi maiores!"
       backgroundType="image"
-      backgroundSrc="About/hero.jpg"
+      backgroundSrc="about/hero.jpg"
       height="70vh"
       overlay="gradient"
       textAlignment="center"

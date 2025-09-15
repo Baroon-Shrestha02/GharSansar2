@@ -6,11 +6,11 @@ const CardStack = ({ isInView }) => {
   const cardData = [
     {
       id: 1,
-      imageSrc: "home/hero.jpg",
+      imageSrc: "main/gs.png",
       alt: "Construction site",
       bgColor: "bg-white",
       rotation: isInView ? -15 : 0,
-      x: isInView ? -200 : 0,
+      x: isInView ? -250 : 0,
       zIndex: 1,
     },
     {
@@ -28,7 +28,7 @@ const CardStack = ({ isInView }) => {
       alt: "Building materials",
       bgColor: "bg-white",
       rotation: isInView ? 15 : 0,
-      x: isInView ? 200 : 0,
+      x: isInView ? 250 : 0,
       zIndex: 2,
     },
   ];

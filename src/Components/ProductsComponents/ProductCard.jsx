@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, Eye, ShoppingCart, Loader } from "lucide-react";
 
@@ -15,6 +15,22 @@ const ProductCard = ({ products }) => {
     setIsModalOpen(false);
     setSelectedProduct(null);
   };
+
+  useEffect(() => {
+    if (isModalOpen) {
+      document.body.classList.add("overflow-hidden"); // disable page scroll
+      document.querySelector("nav")?.classList.add("hidden"); // hide navbar
+    } else {
+      document.body.classList.remove("overflow-hidden");
+      document.querySelector("nav")?.classList.remove("hidden");
+    }
+
+    return () => {
+      // cleanup
+      document.body.classList.remove("overflow-hidden");
+      document.querySelector("nav")?.classList.remove("hidden");
+    };
+  }, [isModalOpen]);
 
   const truncateText = (text, lines = 2) => {
     const words = text.split(" ");
@@ -102,14 +118,14 @@ const ProductCard = ({ products }) => {
       <AnimatePresence>
         {isModalOpen && selectedProduct && (
           <motion.div
-            className="fixed inset-0 top-10 bg-black/60 backdrop-blur-sm flex items-center justify-center p-4 z-50"
+            className="fixed inset-0 bg-black backdrop-blur-sm flex items-center justify-center p-4 z-50"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             onClick={closeModal}
           >
             <motion.div
-              className="bg-white rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-2xl"
+              className="bg-white rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-y-auto scrollbar-hide shadow-2xl"
               initial={{ scale: 0.9, opacity: 0, y: 50 }}
               animate={{ scale: 1, opacity: 1, y: 0 }}
               exit={{ scale: 0.9, opacity: 0, y: 50 }}

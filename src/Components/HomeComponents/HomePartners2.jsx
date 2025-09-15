@@ -82,13 +82,6 @@ export default function HomePartners2() {
               delay: index * 0.2,
               duration: 1.5,
             }}
-            // whileHover={{
-            //   scale: card.scale * 1.05,
-            //   rotate: card.rotation * 1.2,
-            //   y: card.y - 10,
-            //   zIndex: 10,
-            //   transition: { duration: 0.3 },
-            // }}
           >
             <div className="relative w-full h-full">
               <img

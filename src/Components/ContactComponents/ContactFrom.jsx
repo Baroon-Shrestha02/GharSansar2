@@ -27,12 +27,11 @@ export default function ContactForm() {
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-serif font-bold text-[#009F8A] mb-4">
+          <h2 className="text-4xl md:text-5xl font-serif font-bold text-secondary mb-4">
             Get In Touch
           </h2>
           <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-            Visit our bakery, call us, or send us a message. We're here to serve
-            you the finest baked goods in town!
+            Visit us, call us, or send us a message. We're here to serve you!
           </p>
         </div>
 
@@ -90,11 +89,7 @@ export default function ContactForm() {
                   <h4 className="font-semibold text-secondary text-lg">
                     Email
                   </h4>
-                  <p className="text-gray-600 mt-1">
-                    info@bakehouse.com.np
-                    <br />
-                    orders@bakehouse.com.np
-                  </p>
+                  <p className="text-gray-600 mt-1">info@gharsansar.com</p>
                 </div>
               </div>
 
@@ -110,19 +105,12 @@ export default function ContactForm() {
                   </h4>
                   <div className="text-gray-600 mt-1 space-y-1">
                     <p>
-                      <span className="font-medium">Monday - Friday:</span> 7:00
+                      <span className="font-medium">Sunday - Friday:</span> 7:00
                       AM - 9:00 PM
                     </p>
                     <p>
                       <span className="font-medium">Saturday:</span> 7:00 AM -
                       10:00 PM
-                    </p>
-                    <p>
-                      <span className="font-medium">Sunday:</span> 8:00 AM -
-                      8:00 PM
-                    </p>
-                    <p className="text-secondary font-medium mt-2">
-                      Fresh bread available from 7:30 AM daily!
                     </p>
                   </div>
                 </div>
@@ -220,7 +208,7 @@ export default function ContactForm() {
                   />
                   <textarea
                     name="message"
-                    placeholder="Tell us about your inquiry, special orders, or any questions you have..."
+                    placeholder="Tell us about your inquiry, orders, or any questions you have..."
                     value={formData.message}
                     onChange={handleChange}
                     className="w-full focus:outline-none bg-transparent resize-none text-gray-700 placeholder-gray-400"

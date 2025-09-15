@@ -77,7 +77,7 @@ export default function HomeIntro() {
                   >
                     <button className="group mt-8 bg-primary text-white px-8 py-4 rounded-full font-bold text-lg hover:shadow-xl hover:scale-105 transition-all duration-300 relative overflow-hidden">
                       <span className="relative z-10">Discover Our Story</span>
-                      <div className="absolute inset-0 bg-gradient-to-r from-teal-600 to-[#009F8A] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
+                      <div className="absolute inset-0 bg-secondary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
                     </button>
                   </div>
                 </div>
@@ -94,7 +94,7 @@ export default function HomeIntro() {
                 }`}
               >
                 <div className="relative group">
-                  <div className="hidden md: block absolute -top-8 -right-8 w-full h-full bg-gradient-to-br from-[#009F8A]/10 to-teal-500/5 rounded-3xl transform rotate-3 group-hover:rotate-6 transition-transform duration-500"></div>
+                  <div className="hidden md:block absolute -top-8 -right-8 w-full h-full bg-gradient-to-br from-[#009F8A]/10 to-teal-500/5 rounded-3xl transform rotate-3 group-hover:rotate-6 transition-transform duration-500"></div>
 
                   <div className="relative rounded-3xl shadow-2xl group-hover:shadow-3xl transition-all duration-500 border border-gray-100">
                     <img
@@ -114,10 +114,6 @@ export default function HomeIntro() {
                       </div>
                     </div>
                   </div>
-
-                  {/* Decorative Elements */}
-                  {/* <div className="absolute top-4 left-4 w-16 h-16 bg-[#F8F8F2] rounded-full opacity-20 group-hover:scale-150 transition-transform duration-700"></div>
-                  <div className="absolute bottom-8 right-8 w-12 h-12 bg-[#009F8A]/20 rounded-full opacity-30 group-hover:scale-125 transition-transform duration-500"></div> */}
                 </div>
               </div>
             </div>

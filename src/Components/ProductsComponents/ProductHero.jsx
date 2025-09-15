@@ -7,7 +7,7 @@ export default function ProductHero() {
       title="Our products"
       description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur incidunt recusandae officiis voluptates"
       backgroundType="image"
-      backgroundSrc="About/hero.jpg"
+      backgroundSrc="about/hero.jpg"
       height="70vh"
       overlay="gradient"
       textAlignment="center"

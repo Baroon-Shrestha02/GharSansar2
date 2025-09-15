@@ -11,9 +11,8 @@ export default function HorizontalProducts() {
   const products = [
     {
       id: "cement",
-      name: "PORTLAND CEMENT",
-      image:
-        "https://images.unsplash.com/photo-1599305445671-5a1a5f37d2d6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      name: "SHIVAM CEMENT",
+      image: "home/cement.png",
       description: "50kg bag • High strength",
       price: 750,
       company: "Ghar Sansar",
@@ -21,44 +20,23 @@ export default function HorizontalProducts() {
     {
       id: "steel-rods",
       name: "STEEL RODS (TMT)",
-      image:
-        "https://images.unsplash.com/photo-1623177584050-bd94b35729ae?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "home/rods.jpg",
       description: "Per bundle • Reinforcement rods",
       price: 2500,
-      company: "Delight",
+      company: "Ghar Sansar",
     },
     {
       id: "bricks",
       name: "CLAY BRICKS",
-      image:
-        "https://images.unsplash.com/photo-1618773928121-c32242e63f4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "home/bricks.jpg",
       description: "Per 100 pcs • Standard size",
       price: 1200,
       company: "GS",
     },
     {
-      id: "sand",
-      name: "RIVER SAND",
-      image:
-        "https://images.unsplash.com/photo-1590086782794-7a7fef47cd93?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      description: "Per cubic foot • Fine quality",
-      price: 65,
-      company: "Ghar Sansar",
-    },
-    {
-      id: "gravel",
-      name: "GRAVEL (AGGREGATES)",
-      image:
-        "https://images.unsplash.com/photo-1609899047034-d98a71edb39c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      description: "Per cubic foot • Strong base material",
-      price: 75,
-      company: "Delight",
-    },
-    {
       id: "tiles",
       name: "CERAMIC TILES",
-      image:
-        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "home/tiles.jpg",
       description: "Per box • Floor & wall use",
       price: 1500,
       company: "GS",
@@ -66,8 +44,7 @@ export default function HorizontalProducts() {
     {
       id: "paint",
       name: "INTERIOR PAINT",
-      image:
-        "https://images.unsplash.com/photo-1509228627152-72ae9ae6848d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "home/paint.jpg",
       description: "20L bucket • Premium finish",
       price: 3200,
       company: "Ghar Sansar",
@@ -75,8 +52,7 @@ export default function HorizontalProducts() {
     {
       id: "pipes",
       name: "PVC PIPES",
-      image:
-        "https://images.unsplash.com/photo-1616627985272-8905e1af9da6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "home/pipes.webp",
       description: "Per 10ft • Water supply use",
       price: 400,
       company: "Delight",
@@ -84,8 +60,7 @@ export default function HorizontalProducts() {
     {
       id: "wires",
       name: "ELECTRICAL WIRES",
-      image:
-        "https://images.unsplash.com/photo-1598791319116-8c2b59d1af3c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "home/wires.jpg",
       description: "90m coil • Copper insulated",
       price: 2500,
       company: "GS",
@@ -93,8 +68,7 @@ export default function HorizontalProducts() {
     {
       id: "wood",
       name: "PLYWOOD SHEETS",
-      image:
-        "https://images.unsplash.com/photo-1605733160314-4f7b89e97b0d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "home/ply.jpg",
       description: "Per sheet • Durable finishing",
       price: 2200,
       company: "Ghar Sansar",
@@ -102,8 +76,7 @@ export default function HorizontalProducts() {
     {
       id: "roofing",
       name: "ROOFING SHEETS",
-      image:
-        "https://images.unsplash.com/photo-1635322993651-4484a1c2cc74?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "home/roof.avif",
       description: "Per sheet • Corrugated steel",
       price: 1800,
       company: "Delight",
@@ -111,8 +84,7 @@ export default function HorizontalProducts() {
     {
       id: "doors",
       name: "WOODEN DOORS",
-      image:
-        "https://images.unsplash.com/photo-1600585154203-c7aebfe244fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "home/doors.jpg",
       description: "Per piece • Solid wood",
       price: 9500,
       company: "GS",
@@ -247,10 +219,7 @@ export default function HorizontalProducts() {
                 </div>
 
                 {/* Product Info */}
-                <div
-                  className="px-3 py-2 absolute bottom-0 w-full 
-     bg-white/40 backdrop-blur-md rounded-t-lg"
-                >
+                <div className="px-3 py-2 absolute bottom-0 w-full bg-black/60 backdrop-blur-md rounded-t-lg">
                   {/* Product Name */}
                   <h3 className="text-lg font-bold text-white mb-1 line-clamp-2">
                     {product.name}

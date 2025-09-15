@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export default function AboutMission() {
   return (
-    <section className="contianer bg-secondary -mt-30 relative z-10 mx-20 rounded-3xl">
+    <section className="contianer bg-secondary -mt-30 relative z-10 mx-4 md:mx-20 rounded-3xl">
       <div className=" py-16 px-6 md:px-20 ">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
           {/* Text Content - shown first on small screens */}
@@ -13,7 +13,7 @@ export default function AboutMission() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
           >
-            <h2 className="text-5xl md:text-6xl font-serif font-bold mb-2">
+            <h2 className="text-5xl md:text-6xl font-serif font-bold mb-2 ">
               Our Mission
             </h2>
 

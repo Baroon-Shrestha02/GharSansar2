@@ -3,7 +3,7 @@
 @theme {
   --color-back: #2a323f;
   --color-primary: #ff9301;
-  --color-secondary: #0d50ba;
+  --color-secondary: #03698d;
 }
 
 @font-face {
@@ -22,4 +22,13 @@
 
 .light {
   font-family: "rocalight";
+}
+
+/* Hide scrollbar but keep scrolling */
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
 }

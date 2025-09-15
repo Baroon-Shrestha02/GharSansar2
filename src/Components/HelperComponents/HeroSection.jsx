@@ -6,6 +6,7 @@ import { ChevronRight, Play, Pause } from "lucide-react";
 const HeroSection = ({
   title,
   description,
+  breadcrumbs,
   backgroundType,
   backgroundSrc,
   videoSrc,
@@ -18,11 +19,11 @@ const HeroSection = ({
   const getOverlayClasses = () => {
     switch (overlay) {
       case "dark":
-        return "bg-black/80 bg-opacity-50";
+        return "bg-black bg-opacity-50";
       case "light":
         return "bg-white bg-opacity-30";
       case "gradient":
-        return "bg-gradient-to-t from-white to-secondary";
+        return "bg-gradient-to-t from-secondary via-transparent to-secondary";
       default:
         return "";
     }
@@ -86,7 +87,7 @@ const HeroSection = ({
   };
 
   return (
-    <section className="relative  w-full overflow-hidden" style={{ height }}>
+    <section className="relative w-full overflow-hidden" style={{ height }}>
       {/* Background */}
       {backgroundType === "image" ? (
         <div
@@ -118,14 +119,16 @@ const HeroSection = ({
         </button>
       )}
 
+      {/* Content */}
       <div className={getTextContainerClasses()}>
         <div className="max-w-2xl">
+          {/* Title */}
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-4 md:mb-6 leading-tight">
             {renderAnimatedText(title)}
           </h1>
 
           {/* Description */}
-          <p className="text-lg md:text-xl text-gray-200 leading-relaxed max-w-3xl light">
+          <p className="text-lg md:text-xl text-gray-200 leading-relaxed max-w-3xl">
             {renderAnimatedText(description)}
           </p>
         </div>

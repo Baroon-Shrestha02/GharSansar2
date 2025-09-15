@@ -83,7 +83,7 @@ export default function ProductsSection() {
               </div>
 
               {/* Company Filter */}
-              <div className="flex-shrink-0 z-99">
+              <div className="flex-shrink-0 ">
                 <label className="block text-sm font-semibold text-gray-700 mb-2">
                   Filter by Company
                 </label>

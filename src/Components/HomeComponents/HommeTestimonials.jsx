@@ -16,7 +16,7 @@ const TestimonialsCarousel = () => {
       text: "Delight has been my trusted place for construction equipment. Their delivery was quick, and the staff helped me pick the right tools.",
       author: "Bina Thapa",
       image: "B",
-      bgColor: "bg-[#009F8A]",
+      bgColor: "bg-secondary",
       textColor: "text-white",
     },
     {
@@ -32,7 +32,7 @@ const TestimonialsCarousel = () => {
       text: "While building our new home, we bought several essentials from Ghar Sansar. Everything was reasonably priced and durable.",
       author: "Priya Adhikari",
       image: "P",
-      bgColor: "bg-[#009F8A]",
+      bgColor: "bg-secondary",
       textColor: "text-white",
     },
     {
@@ -48,7 +48,7 @@ const TestimonialsCarousel = () => {
       text: "GS was very helpful during my house renovation. Their staff gave me genuine suggestions, and the items were high quality.",
       author: "Meena Gurung",
       image: "M",
-      bgColor: "bg-[#009F8A]",
+      bgColor: "bg-secondary",
       textColor: "text-white",
     },
     {
@@ -64,7 +64,7 @@ const TestimonialsCarousel = () => {
       text: "Delight and GS both have become my go-to for building supplies. Good service, affordable prices, and trustworthy quality.",
       author: "Kritika Lama",
       image: "K",
-      bgColor: "bg-[#009F8A]",
+      bgColor: "bg-secondary",
       textColor: "text-white",
     },
   ];
