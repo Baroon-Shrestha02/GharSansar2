@@ -405,6 +405,8 @@ export default function AboutPartners() {
             </div>
           </div>
         </div>
+        // </div>
+        // </div>
       )}
     </section>
   );
