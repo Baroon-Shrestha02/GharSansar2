@@ -7,6 +7,7 @@ import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import ScrollToTop from "./Components/HelperComponents/ScrollToTop";
 import ServicesPage from "./Pages/ServicesPage";
+import FAQPage from "./Pages/FAQPage";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/products" element={<ProductsPage />} />
         <Route path="/services" element={<ServicesPage />} />
+        <Route path="/faq" element={<FAQPage />} />
         <Route path="/contact" element={<ContactPage />} />
       </Routes>
       <Footer />

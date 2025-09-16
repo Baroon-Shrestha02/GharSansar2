@@ -178,7 +178,7 @@ export default function SimpleMasonryPortfolio() {
       {/* Header */}
       <section className="py-12 bg-secondary relative overflow-hidden">
         <div className="relative z-10 text-center">
-          <h1 className="text-4xl md:text-6xl text-white font-bold mb-4 ">
+          <h1 className="text-5xl md:text-7xl text-white font-bold mb-4 ">
             Our Crafts
           </h1>
           <p className="text-gray-300 text-base md:text-lg max-w-3xl mx-auto px-4 leading-relaxed">
@@ -204,7 +204,7 @@ export default function SimpleMasonryPortfolio() {
             <button
               onClick={handleViewMore}
               disabled={loading}
-              className="group relative px-10 py-5 bg-primary text-white font-bold rounded-full overflow-hidden transition-all duration-500 hover:shadow-2xl transform hover:scale-105 disabled:opacity-70 disabled:cursor-not-allowed"
+              className="group relative px-10 py-3 bg-primary text-white font-bold rounded-full overflow-hidden transition-all duration-500 hover:shadow-2xl transform hover:scale-105 disabled:opacity-70 disabled:cursor-not-allowed"
             >
               <span className="relative z-10 flex items-center gap-3 text-lg">
                 {loading ? (

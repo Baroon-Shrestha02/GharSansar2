@@ -12,7 +12,7 @@ export default function ServicesMain() {
       <ServiceHero />
       <CoreServices />
       <HowWeWork />
-      {/* <FeaturedProject /> */}
+      <FeaturedProject />
       <ServiceFAQ />
       <CTA />
     </div>

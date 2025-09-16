@@ -9,14 +9,14 @@ const featuredProjects = [
     name: "Modern Family Home",
     location: "Kathmandu",
     images: [
-      "/images/projects/family-home-1.jpg",
-      "/images/projects/family-home-2.jpg",
-      "/images/projects/family-home-3.jpg",
-      "/images/projects/family-home-4.jpg",
-      "/images/projects/family-home-5.jpg",
-      "/images/projects/family-home-6.jpg",
+      "home/intro.jpeg",
+      "home/cement.png",
+      "home/paint.jpg",
+      "home/ply.jpg",
+      "home/rods.jpg",
+      "home/wires.jpg",
     ],
-    mainImage: "/images/projects/family-home-1.jpg",
+    mainImage: "main/logo.jpg",
     description:
       "A contemporary 3-bedroom house with modern interiors and sustainable materials.",
     details:

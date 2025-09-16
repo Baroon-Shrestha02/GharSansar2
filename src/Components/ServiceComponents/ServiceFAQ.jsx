@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const ServiceFAQ = () => {
   const [activeQuestion, setActiveQuestion] = useState(0);
@@ -96,7 +97,9 @@ const ServiceFAQ = () => {
       </div>
       <div className="flex gap-2 mt-6 items-center justify-center text-lg md:text-2xl">
         Still Have Queries?
-        <span className="text-secondary">More FAQ's</span>
+        <Link to="/faq">
+          <span className="text-secondary">More FAQ's</span>
+        </Link>
       </div>
     </div>
   );
