@@ -17,7 +17,7 @@ const Partners = [
     ],
     logo: "main/logo.jpg",
     established: "2015",
-    projects: "5000+ supplies",
+    projects: "1000+ supplies",
     rating: "4.9/5",
     specialties: [
       "Trusted supplier partnerships",
@@ -91,7 +91,7 @@ const Partners = [
     ],
     logo: "main/logo.jpg",
     established: "2020",
-    projects: "350+ decoration projects",
+    projects: "300+ decoration projects",
     rating: "4.9/5",
     specialties: [
       "Custom color matching",

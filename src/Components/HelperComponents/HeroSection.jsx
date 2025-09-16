@@ -110,16 +110,6 @@ const HeroSection = ({
         className={`absolute bg-black/40 inset-0 z-10 ${getOverlayClasses()}`}
       />
 
-      {/* Video Controls */}
-      {backgroundType === "video" && (
-        <button
-          onClick={toggleVideo}
-          className="absolute top-6 right-6 z-30 bg-black bg-opacity-50 text-white p-3 rounded-full hover:bg-opacity-70 transition-all duration-300"
-        >
-          {isVideoPlaying ? <Pause size={20} /> : <Play size={20} />}
-        </button>
-      )}
-
       {/* Content */}
       <div className={getTextContainerClasses()}>
         <div className="max-w-2xl">
